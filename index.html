@@ -145,6 +145,12 @@ myInput.onkeyup = function() {
     length.classList.remove("valid");
     length.classList.add("invalid");
   }
+  
+  //User Message, if wrong login ID/Password credentials
+  if (myInput.value.match(psw)) {   
+    alert("Wrong ID/Password. Please Try Again");
+    return false;
+  }
 }
 </script>
 
